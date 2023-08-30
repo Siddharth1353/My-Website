@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <style>
+        
+        body{
+            background-color: #e8e7eb;
+        }
+        .dropdown-toggle::after {
+            display: inline-block;
+            margin-left: 0.255em;
+            vertical-align: 0.255em;
+            content: "";
+            border-top: 0.3em solid;
+            border-right: 0.3em solid transparent;
+            border-bottom: 0;
+            border-left: 0.3em solid transparent;
+        }
+
+        .container2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .item{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+
+        .box{
+            display: flex;
+        }
+        .border-bottom{
+            background-color:#e8e7eb;
+        }
+       
+        .text-center{
+            background-color: #fbf0d9;
+        }
+        
+        .card-body{
+        background-color: #fbf0eb;
+    }
+    .feature{
+        background-color: #eee2cf;
+    }
+    .btn{
+    background-color: #9b82da;
+    border: none;
+    }
+   
+    </style>
+    
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="border-bottom py-3">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+                    <img src="./person-vcard.svg" alt="Person" height="33">
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 link-secondary">Overview</a></li>
+                    <li><a href="#" class="nav-link px-2 link-body-emphasis">About Me</a></li>
+                    <li><a href="#" class="nav-link px-2 link-body-emphasis">Projects</a></li>
+                    <li><a href="#" class="nav-link px-2 link-body-emphasis">Resume</a></li>
+                </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                </form>
+
+                <div class="dropdown text-end">
+                    <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./sid.jpeg" alt="mdo" width="32" height="32" class="rounded-circle">
+
+                    </a>
+                    <ul class="dropdown-menu text-small" style="">
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header -->
+
+    <!-- About Me -->
+    <div class=" text-center border-bottom pt-5">
+        <h1 class="display-4 fw-bold text-body-emphasis">Siddharth Rajpurohit</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">A Second-year undergraduate student pursuing a B.Tech degree in Computer Science from
+                SRM Institute of Science and Technology. I’m eager to use my skills and experience in every possible
+                manner and try my best to create a significant impact.</p>
+        </div>
+        <div class="overflow-hidden" style="max-height: 30vh;">
+            <div class="container px-5">
+                <img src="./srm.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700"
+                    height="500" loading="lazy">
+            </div>
+        </div>
+    </div>
+    <!-- About Me -->
+
+    <!-- Achivements -->
+    <div class="container">
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="feature col">
+                <div
+                    class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                    <img src="./person-fill-up.svg" alt="Head boy" height="40">
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Head Boy</h3>
+                <p>I was the Head Boy of my School in my class 12. It was my honour to be the part of major decision
+                    making of the school.</p>
+
+            </div>
+            <div class="feature col">
+                <div
+                    class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                    <img src="./mortarboard.svg" alt="CR" height="40">
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Class Representative</h3>
+                <p>I have also been the Class Representative in my first year of the college. It was my pleasure to take
+                    up the responsiblity and share all the information with my classmates. </p>
+
+            </div>
+            <div class="feature col">
+                <div
+                    class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                    <img src="./award.svg" alt="CGPA" height="40">
+                </div>
+                <h3 class="fs-2 text-body-emphasis">1st year Cgpa</h3>
+                <p>My first year CGPA was 9.33, which is not a bad one to begin with. I am always looking up to improve
+                    on my self and try to create a significant impact. </p>
+
+            </div>
+        </div>
+    </div>
+    <!-- Achivements -->
+    <!-- project -->
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./Screenshot (99).png" class="d-block w-100" alt="food">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Screenshot (100).png" class="d-block w-100" alt="game">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Screenshot (101).png" class="d-block w-100" alt="gym">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- slide end -->
+    <div class="container item pt-5">
+    <div class="card" style="width: 18rem;">
+        <img src="./Screenshot (99).png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Food Delivery Website</h5>
+          <p class="card-text">This website helps you to place order of your favourite food items. Moreover it helps you to pick the most quality food as well.</p>
+          <a href="./Project Food Delivery website/index.html " target="_blank" class="btn btn-primary">Go to website</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="./Screenshot (100).png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Gaming Website</h5>
+          <p class="card-text">This website is basically for the gaming purpose. It makes the the user engage with the game and prevents boredom</p>
+          <a href="./Project Gaming Webiste/index2.html" target="_blank" class="btn btn-primary">Go to website</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="./Screenshot (101).png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Gym website</h5>
+          <p class="card-text">Health is one of the most important factor of a human body. Therefore this website helps you to find the best gym available near you and helps you enroll in it.</p>
+          <a href="./Project Gym Website/index.html" target="_blank" class="btn btn-primary">Go to website</a>
+        </div>
+      </div>
+
+    </div>
+    <!-- project -->
+
+    <!-- link -->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Siddharth Rajpurohit, Inc</span>
+        </div>
+        <div class="box px-5">
+            <a href="https://www.linkedin.com/in/siddharth-rajpurohit-5075b3249/"><img src="./Linkedin-Logo-removebg-preview.png" alt="" height="50"></a>
+       </div>
+      </footer>
+
+     <!-- link -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
